@@ -1,0 +1,17 @@
+.top-btn {
+    position: fixed;
+    /* 화면 고정 */
+    bottom: 30px;
+    /* 아래에서 30px 위 */
+    right: 30px;
+    /* 오른쪽에서 30px 안쪽 */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* 다른 요소 위 */
+}

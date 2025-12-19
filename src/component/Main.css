@@ -1,0 +1,243 @@
+/* Main.css */
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+}
+
+
+
+/* 하단 동그라미 색상 */
+.swiper-pagination-bullet {
+  background-color: #fc5daf !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+
+/* 그리드 전체 */
+.main-grid {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 각 행 */
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* 공통 버튼 */
+.grid-item {
+  height: 70px;
+  background: #fcfcfc;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* 오시는 길 */
+.grid-item.special-btn .content-wrapper {
+  display: flex;
+  /* 가로 배치 */
+  align-items: center;
+  /* 세로 중앙 정렬 */
+  gap: 10px;
+  /* 아이콘과 텍스트 사이 간격 */
+  padding: 6px 10px;
+  /* 내부 여백 */
+}
+
+/* 첫 줄 */
+.icon-intro {
+  background-position: 5px 4px;
+}
+
+.icon-doctor {
+  background-position: -68px -1.5px;
+}
+
+.icon-care {
+  background-position: -130px 6px;
+}
+
+/* 둘째 줄 */
+.icon-clinic {
+  background-position: -211px 0;
+}
+
+.icon-equipment {
+  background-position: 18px -70px;
+}
+
+.icon-tour {
+  background-position: -56px -73px;
+}
+
+.icon-full {
+  background-position: -136px -71px;
+}
+
+/* 버튼 공통 */
+.grid-item {
+  flex: 1;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 77px;
+  /* 스프라이트 한 칸 너비 */
+  height: 77px;
+  /* 스프라이트 한 칸 높이 */
+  display: block;
+  background-image: url('../images/nav_icon.png');
+  background-repeat: no-repeat;
+  background-size: 300px 200px;
+  /* 스프라이트 전체 크기 */
+}
+
+/* 2번째 아이콘 크기 */
+.nav-icon.icon-doctor {
+  width: 65px;
+  /* 원하는 가로 */
+  height: 70px;
+  /* 원하는 세로 */
+}
+
+/* 7번째 아이콘 크기 */
+.nav-icon.icon-full {
+  width: 30px;
+  height: 40px;
+}
+
+
+/* 하단 배너 */
+.main-banner {
+  margin: 0 20px 20px;
+  background-image: url('../images/info_back.png');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 35px;
+}
+
+/* 배너 안 텍스트 */
+.banner-content {
+  color: #fff;
+  max-width: 70%;
+}
+
+/* 상단 (아이콘 + 지점명 + 전화번호) */
+.banner-content .banner-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 2px;
+  font-size: 22px;
+}
+
+/* 전화 아이콘 */
+.banner-content .fa-phone {
+  margin-right: 3px;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* 지점명 */
+.banner-top .branch {
+  font-weight: 600;
+}
+
+/* 전화번호 */
+.banner-top .phone {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 17px;
+  /* 원하는 간격으로 조정 */
+}
+
+
+/* 하단 설명 문구 (위 텍스트와 위치 맞춤) */
+.banner-content .banner-desc {
+  margin: 0;
+  font-size: 14px;
+  padding-left: 125px;
+  /* 아이콘 + 간격만큼 */
+}
+
+@media (max-width: 768px) {
+
+  /* 배너 전체 패딩/마진 축소 */
+  .main-banner {
+    margin: 0 0 15px;
+    padding: 10px 15px;
+  }
+
+  /* 배너 안 콘텐츠 넓이 조절 */
+  .banner-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  /* 상단 (아이콘 + 지점명 + 전화번호) */
+  .banner-content .banner-top {
+    flex-direction: row;
+    /* 가로 배치 유지 */
+    flex-wrap: wrap;
+    /* 화면 좁으면 줄바꿈 가능 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    gap: 6px;
+    /* 아이콘과 글자 간격 */
+    font-size: 16px;
+    /* 글자 크기 조절 */
+    padding-left: 15px;
+  }
+
+  /* 전화 아이콘 크기 조절 */
+  .banner-content .fa-phone {
+    font-size: 18px;
+    margin-right: 3px;
+  }
+
+  /* 지점명, 전화번호 글자 크기 */
+  .banner-top .branch {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .banner-top .phone {
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 21px
+      /* 아이콘과 전화번호 간격 */
+  }
+
+  /* 하단 설명 문구 */
+  .banner-content .banner-desc {
+    font-size: 13px;
+    padding-left: 122px;
+    margin-top: 4px;
+    /* 상단 텍스트와 간격 */
+  }
+}

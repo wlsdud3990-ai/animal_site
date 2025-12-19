@@ -1,0 +1,45 @@
+.footer {
+  padding: 30px 20px;
+  background: #e6e5e5;
+  color: #252525;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 가로 정중앙 */
+  text-align: center;
+  /* 텍스트 중앙 */
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  /* 로고 + 버튼 세로 배치 */
+  align-items: center;
+  /* 중앙 정렬 */
+  gap: 12px;
+  margin-bottom: 7px;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+.footer-btn {
+  background: none;
+  border: 1px solid #252525;
+  color: #252525;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.footer-info p {
+  margin: 6px 0;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #252525;
+}
